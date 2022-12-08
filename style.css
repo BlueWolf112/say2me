@@ -32,7 +32,7 @@ textarea{
 }
 .field::-webkit-input-placeholder{
   color:#fff;
-  opacity:.5;
+  opacity:.8;
 }
 .btn{
   width: 100%;
