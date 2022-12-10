@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Zen+Dots&display=swap');
+  /* Style */
+body{
+  color: #fff;
+  font-family: 'Zen Dots', cursive;
+  background-color: #22124F;
+  background-image: url("/media/vecteezy_milky-way-scenery-background_11877064.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center bottom;
+}
+.container{
+  top: -10vh;
+  flex-direction: column;
+  height: 100%;
+  position: absolute 
+}
+h1{
+  font-size: 3rem;
+  text-align: center;
+  position: relative;
+}
+h3{
+  opacity: .8
+}
