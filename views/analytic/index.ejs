@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Respon Say2Me</title>
+	<link rel="stylesheet" href="public/res/bootstrap@5.0.0-alpha2.min.css">
+  <link rel="styleSsheet" href="public/res/chartist.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<style type="text/css">
+	*{color: #fff;}
+	body{width: 100%;
+		background: #212529;
+		padding: 1rem 0 2rem 0;}
+	table{border: 5px #fff solid;}
+	.keterangan{margin-top: 2rem}
+</style>
+<body>
+	<!-- As a heading -->
+	<nav class="navbar bg-dark">
+	  <div class="container-fluid d-flex justify-content-center">
+	    <span class="navbar-brand mb-0 h1"><h1><%= title %></h1></span>
+	  </div>
+	</nav>
+	<!-- Data Table -->
+	<div class="container">
+	<table class="table table-striped table-dark table-hover">
+	  <thead>
+	    <tr>
+	      <th scope="col">ID</th>
+	      <th scope="col">Date Time</th>
+	      <th scope="col">Message</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <% for (let user of users) {%>
+	    	<tr>
+					<td scope="row"><%= user.id %></td>
+					<td scope="row"><%= user.time %></td>
+					<td scope="row"><%= user.message %></td>
+				</tr>
+	    <% } %>
+	  </tbody>
+	</table>
+	</div>
+	<div class="keterangan d-flex justify-content-center"><strong>Keterangan: Waktu pada jam ditambah 14.00</strong></div>
+</body>
+</html>

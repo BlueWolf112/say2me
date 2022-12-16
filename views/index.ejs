@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>say2me | Kirimkan Pesan Rahasia</title>
+    <link rel="stylesheet" href="public/res/bootstrap@5.0.0-alpha2.min.css">
+    <link rel="stylesheet" href="public/res/chartist.min.css">
+    <link rel="stylesheet" href="public/style.css">
+ 
+</head>
+<body class="d-flex justify-content-center">
+  
+  <!-- Form -->
+<form class=" m-4" action="/sent" method="post">
+  <div class="form-group ">
+    <label class="form-label" for="message">
+      <h2 class="text-light label">Kirimkan aku pesan rahasia</h2>
+    </label>
+    <textarea type="text" name="pesan" class="form-control text-indigo field" rows="5" id="message" placeholder="masukkan pesanmu..."></textarea>
+  </div>
+  <div class="col-12 mt-3 mx-auto">
+    <a href="sent/index.html"><button type="submit" class="btn">Kirim</button></a>
+  </div>
+</form>
+</body>
+</html>
