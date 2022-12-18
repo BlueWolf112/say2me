@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "said": "nodemon index.js"
+    "said": "node index.js"
+  },
+  "engines":{
+    "node": "14x"
   },
   "dependencies": {
     "body-parser": "^1.20.1",
