@@ -8,7 +8,7 @@
     "start": "node index.js"
   },
   "engines":{
-    "node": "14x"
+    "node": "18.x"
   },
   "dependencies": {
     "body-parser": "^1.20.1",
