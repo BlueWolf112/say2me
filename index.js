@@ -3,7 +3,7 @@ const express = require("express")
 const bodyParser = require("body-parser")
 const db = require('./connection')
 const app = express()
-const toHost = 3515;
+const PORT = process.env.PORT || 3515;
 
 //connect to other resouces
 app.use('/public', express.static('public'))
@@ -16,7 +16,7 @@ app.set("views", "views")
 // Connecting to others
 db.connect((err) => {
 	if (err) throw err
-	console.log("Database Connected to Host " + toHost);
+	console.log("Database Connected to Host " + PORT);
 	//menampilkan input (main) page
 	app.get("/", (req,res) => {
 	res.render("index");
@@ -39,6 +39,6 @@ db.connect((err) => {
 	})
 })
 //set listening
-app.listen(toHost, () => {
+app.listen(PORT, () => {
 	console.log("Preparing to connect database...");
 });
