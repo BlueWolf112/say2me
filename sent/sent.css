@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Zen+Dots&display=swap');
   /* Style */
-*{
-  margin: 0;
-  padding: 0;
-}
 body{
   color: #d1c9dd;
   font-family: 'Zen Dots', cursive;
   background: linear-gradient(30deg, #1a0d3f, #361b70);
   background-size: cover;
   background-attachment: fixed;
+  background-position: center bottom;
 }
 .container{
   display: flex;
@@ -23,8 +20,8 @@ body{
 h1{
   font-size: 3rem;
   text-align: center;
+  position: relative;
 }
 h3{
-  margin-top: 1rem;
-  opacity: .7
+  opacity: .8
 }
