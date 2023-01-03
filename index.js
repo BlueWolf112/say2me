@@ -11,7 +11,7 @@ app.use('/sent', express.static('sent'))
 app.use(bodyParser.urlencoded({ extended: true }))
 // set file html
 app.set("view engine", "ejs")
-app.set("views", __dirname + "/../views")
+app.set("views", "views")
 
 // Connecting to others
 db.connect((err) => {
