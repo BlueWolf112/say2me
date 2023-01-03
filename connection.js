@@ -9,9 +9,9 @@ var password = "fd60b6cb436e8be5bcba5c3e29251c5932cc9807";
 const db = mysql.createConnection({
 	host: hostname,
   user: username,
-  password,
-  database,
-  port,
+  password: password,
+  database: database,
+  port: port,
 })
 
 module.exports = db;
