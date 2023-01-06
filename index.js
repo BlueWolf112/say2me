@@ -19,7 +19,7 @@ db.connect((err) => {
 	console.log("Website ready on port " + PORT);
 	//menampilkan input (main) page
 	app.get("/", (req, res) => {
-		res.render("index.ejs");
+		res.render("index");
 	});
 
 	//untuk insert data di input (main) page
