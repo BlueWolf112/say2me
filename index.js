@@ -3,6 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const db = require('./connection');
 const app = express();
+const path = require('path');
 const PORT = process.env.PORT || 3515;
 
 //connect to other resouces
@@ -11,7 +12,7 @@ app.use('/sent', express.static('sent'));
 app.use(bodyParser.urlencoded({ extended: true }));
 // set file html
 app.set("view engine", "ejs");
-app.set("views", "views");
+app.set("views", path.join(__dirname, 'views'));
 
 // Connecting to others
 db.connect((err) => {
